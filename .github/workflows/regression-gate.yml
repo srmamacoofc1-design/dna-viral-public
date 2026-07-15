@@ -12,15 +12,19 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - uses: oven-sh/setup-bun@v2
+      - uses: actions/setup-node@v4
         with:
-          bun-version: latest
+          node-version: 20
+          cache: npm
 
       - name: Install dependencies
-        run: bun install --frozen-lockfile
+        run: npm ci --ignore-scripts --no-audit --no-fund
 
-      - name: Run regression suite
-        run: bunx vitest run src/test/regression/
+      - name: Run test suite
+        run: npm test -- --reporter=dot
+
+      - name: Typecheck
+        run: npx tsc --noEmit
 
       - name: Build check
-        run: bun run build
+        run: npm run build
