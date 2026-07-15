@@ -1,0 +1,4 @@
+ALTER TABLE public.videos 
+  ADD COLUMN IF NOT EXISTS views bigint DEFAULT 0,
+  ADD COLUMN IF NOT EXISTS likes bigint DEFAULT 0,
+  ADD COLUMN IF NOT EXISTS comments bigint DEFAULT 0;

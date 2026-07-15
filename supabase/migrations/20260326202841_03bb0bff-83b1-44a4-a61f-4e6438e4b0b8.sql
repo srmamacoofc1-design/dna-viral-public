@@ -1,0 +1,3 @@
+-- Public release: one-off production queue repair intentionally omitted.
+-- It contained row identifiers from the original private database and is not
+-- required to create or operate a fresh project.

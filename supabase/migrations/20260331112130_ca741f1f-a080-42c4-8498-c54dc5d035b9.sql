@@ -1,0 +1,2 @@
+-- Public release: one-off reprocessing job repair intentionally omitted.
+-- The schema and normal processing flow are defined by the other migrations.

@@ -1,0 +1,188 @@
+project_id = "your-project-ref"
+
+[auth]
+site_url = "http://localhost:8080"
+additional_redirect_urls = [
+  "http://localhost:8080/**",
+]
+enable_signup = true
+
+[auth.email]
+enable_signup = true
+enable_confirmations = true
+max_frequency = "1m0s"
+otp_length = 8
+
+[auth.mfa]
+max_enrolled_factors = 10
+
+[auth.mfa.totp]
+enroll_enabled = true
+verify_enabled = true
+
+[storage.vector]
+enabled = false
+
+# Every handler relies on the hosted gateway validating bearer JWTs before
+# application-level user/admin/service authorization in _shared/edge-auth.ts.
+[functions.analyze-narrative]
+verify_jwt = true
+
+[functions.analyze-narrative-sequences]
+verify_jwt = true
+
+[functions.analyze-reference-topics]
+verify_jwt = true
+
+[functions.assemble-script]
+verify_jwt = true
+
+[functions.audit-cta-dedup]
+verify_jwt = true
+
+[functions.backup-export]
+verify_jwt = true
+
+[functions.backup-restore]
+verify_jwt = true
+
+[functions.batch-extract-block-semantics]
+verify_jwt = true
+
+[functions.build-complete-generation-context]
+verify_jwt = true
+
+[functions.calculate-pattern-correlations]
+verify_jwt = true
+
+[functions.calculate-pattern-weights]
+verify_jwt = true
+
+[functions.calculate-performance-normalization]
+verify_jwt = true
+
+[functions.calculate-text-image-compatibility]
+verify_jwt = true
+
+[functions.calculate-text-visual-alignment]
+verify_jwt = true
+
+[functions.consolidate-block-patterns]
+verify_jwt = true
+
+[functions.consolidate-verbal-intelligence]
+verify_jwt = true
+
+[functions.data-readiness-check]
+verify_jwt = true
+
+[functions.detect-cross-patterns]
+verify_jwt = true
+
+[functions.detect-micro-events]
+verify_jwt = true
+
+[functions.download-video]
+verify_jwt = true
+
+[functions.extract-block-semantics]
+verify_jwt = true
+
+[functions.extract-cta-deep]
+verify_jwt = true
+
+[functions.extract-cta-deep-v2]
+verify_jwt = true
+
+[functions.extract-verbal-dna]
+verify_jwt = true
+
+[functions.extract-viral-combinations]
+verify_jwt = true
+
+[functions.extract-visual-blocks]
+verify_jwt = true
+
+[functions.formalize-dna-v2]
+verify_jwt = true
+
+[functions.gemini-key-health]
+verify_jwt = true
+
+[functions.generate-cohort]
+verify_jwt = true
+
+[functions.generate-cohort-summary]
+verify_jwt = true
+
+[functions.generate-dna-base]
+verify_jwt = true
+
+[functions.generate-dna-base-v2]
+verify_jwt = true
+
+[functions.generate-early-event]
+verify_jwt = true
+
+[functions.generate-hook-suggestions]
+verify_jwt = true
+
+[functions.import-reference-video]
+verify_jwt = true
+
+[functions.import-spreadsheet]
+verify_jwt = true
+
+[functions.judge-narrative]
+verify_jwt = true
+
+[functions.migrate-legacy-reference-videos]
+verify_jwt = true
+
+[functions.process-reference-video]
+verify_jwt = true
+
+[functions.process-temporal-profile]
+verify_jwt = true
+
+[functions.process-video-pipeline]
+verify_jwt = true
+
+[functions.promote-script-final]
+verify_jwt = true
+
+[functions.recalculate-viral-scores]
+verify_jwt = true
+
+[functions.reprocess-v2-cancel]
+verify_jwt = true
+
+[functions.reprocess-v2-create-job]
+verify_jwt = true
+
+[functions.reprocess-v2-worker]
+verify_jwt = true
+
+[functions.rescrape-engagement]
+verify_jwt = true
+
+[functions.revise-script-assembly]
+verify_jwt = true
+
+[functions.transcribe-video]
+verify_jwt = true
+
+[functions.translate]
+verify_jwt = true
+
+[functions.update-viral-lexicon]
+verify_jwt = true
+
+[functions.validate-data-consistency]
+verify_jwt = true
+
+[functions.validate-mvp-layers]
+verify_jwt = true
+
+[functions.validate-script-against-dna]
+verify_jwt = true

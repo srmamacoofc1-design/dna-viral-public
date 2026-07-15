@@ -1,0 +1,1 @@
+ALTER TABLE public.video_frames ADD COLUMN IF NOT EXISTS frame_hash text, ADD COLUMN IF NOT EXISTS scene_change_flag boolean DEFAULT false, ADD COLUMN IF NOT EXISTS visual_intensity_score integer;

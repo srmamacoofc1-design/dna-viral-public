@@ -1,0 +1,2 @@
+-- Public release: one-off production retry repair intentionally omitted.
+-- Fresh installations do not contain the repaired private rows.

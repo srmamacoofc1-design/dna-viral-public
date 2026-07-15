@@ -1,0 +1,1 @@
+UPDATE public.video_frames SET source_method = 'block_structural_extraction' WHERE frame_role IN ('start', 'middle', 'end') AND source_method != 'block_structural_extraction';

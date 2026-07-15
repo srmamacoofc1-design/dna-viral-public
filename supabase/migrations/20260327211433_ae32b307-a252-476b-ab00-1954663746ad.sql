@@ -1,0 +1,3 @@
+DELETE FROM processing_queue WHERE video_id IN (SELECT id FROM videos WHERE titulo IN ('Vídeo Teste Flex', 'Outro Vídeo Flex', 'Video Teste Planilha'));
+DELETE FROM video_languages WHERE video_id IN (SELECT id FROM videos WHERE titulo IN ('Vídeo Teste Flex', 'Outro Vídeo Flex', 'Video Teste Planilha'));
+DELETE FROM videos WHERE titulo IN ('Vídeo Teste Flex', 'Outro Vídeo Flex', 'Video Teste Planilha');

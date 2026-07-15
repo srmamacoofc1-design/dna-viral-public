@@ -1,0 +1,1 @@
+CREATE POLICY "Allow public update video_metadata" ON public.video_metadata FOR UPDATE TO public USING (true) WITH CHECK (true);

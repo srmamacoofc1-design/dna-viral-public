@@ -1,0 +1,2 @@
+ALTER TABLE public.videos DROP CONSTRAINT videos_tipo_entrada_check;
+ALTER TABLE public.videos ADD CONSTRAINT videos_tipo_entrada_check CHECK (tipo_entrada = ANY (ARRAY['upload'::text, 'link'::text, 'planilha'::text]));

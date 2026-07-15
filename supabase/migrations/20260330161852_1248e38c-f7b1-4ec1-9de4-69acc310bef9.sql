@@ -1,0 +1,1 @@
+ALTER TABLE public.cohort_analysis_summary ADD COLUMN IF NOT EXISTS confidence_score integer DEFAULT 0;
