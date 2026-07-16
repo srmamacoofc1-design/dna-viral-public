@@ -87,6 +87,7 @@ biblioteca. As rotas técnicas continuam protegidas pelo papel de administrador.
 
 ## Documentação
 
+- [Workflow reproduzível DNA Viral + DublaTudo](docs/WORKFLOW-DNA-DUBLATUDO-2026-07-16.md)
 - [Guia completo de automação](docs/GUIA-AUTOMACAO-DNA-VIRAL-2026-07-15.md)
 - [Especificação dos Presets DNA](docs/DNA-PRESETS.md)
 - [Status técnico da entrega](docs/STATUS-FINAL-DNA-VIRAL-2026-07-15.md)
